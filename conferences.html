@@ -1,0 +1,37 @@
+---
+layout: default
+title: Conferences
+permalink: /conferences/
+---
+<section class="page-header">
+  <div class="container">
+    <h1>Conference presentations</h1>
+    <p>Short courses, sessions, and presentations delivered by PMS members at statistical and scientific conferences.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow-wide">
+    {% for y in site.data.presentations %}
+      <div class="timeline-year">
+        <h2>{{ y.year }}</h2>
+        <div class="stack">
+          {% for item in y.items %}
+            <article class="card conf">
+              <div class="tags">
+                <span class="tag">{{ item.conference }}</span>
+                {% if item.type %}<span class="tag tag-muted">{{ item.type }}</span>{% endif %}
+              </div>
+              {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
+              {% if item.full_name %}<p class="meta">{{ item.full_name }}</p>{% endif %}
+              {% if item.presenters %}<p class="meta">{{ item.presenters | join: ", " }}</p>{% endif %}
+              {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+              {% if item.link %}<a href="{{ item.link }}" target="_blank" rel="noopener">More information &rarr;</a>{% endif %}
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+    <p class="muted">More details on individual talks and materials will be added.</p>
+  </div>
+</section>

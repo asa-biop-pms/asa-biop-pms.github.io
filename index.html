@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <p class="eyebrow">ASA Biopharmaceutical Section &middot; Scientific Working Group</p>
+      <h1>Precision Medicine Statistics Working Group</h1>
+      <p class="lead">
+        Bringing together statisticians from industry, regulatory agencies, and academia to
+        advance rigorous statistical practice for biomarkers, companion diagnostics, and
+        personalized therapies.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="{{ '/webinars/' | relative_url }}">Webinar series</a>
+        <a class="btn btn-ghost" href="{{ '/team/' | relative_url }}">Meet the team</a>
+      </div>
+    </div>
+    <img class="hero-logo" src="{{ '/assets/img/pms-logo.png' | relative_url }}" alt="PMS logo">
+  </div>
+</section>
+
+<section class="section">
+  <div class="container narrow">
+    <h2>About us</h2>
+    <p>
+      The Precision Medicine Statistics (PMS) Working Group was approved by the American
+      Statistical Association Biopharmaceutical Section (ASA BIOP) in April 2025. Our goal is
+      to promote harmonized, transparent statistical methods for developing, validating, and
+      using biomarkers and companion diagnostics, so that rigorous evidence supports
+      decision-making and personalized therapies reach patients more efficiently.
+    </p>
+    <p>
+      We work in close collaboration with the ASA Section on Statistics in Genomics and
+      Genetics (SSGG), connecting academic and industry statisticians.
+    </p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="center">Focus areas</h2>
+    <div class="grid grid-3">
+      <div class="card feature">
+        <div class="feature-icon">&#9783;</div>
+        <h3>Biomarker-driven trial design</h3>
+        <p>Statistical strategies for biomarker-based clinical development, patient selection, and stratification.</p>
+      </div>
+      <div class="card feature">
+        <div class="feature-icon">&#10003;</div>
+        <h3>Companion diagnostics</h3>
+        <p>Best practices for CDx development, validation, and co-development with therapeutics.</p>
+      </div>
+      <div class="card feature">
+        <div class="feature-icon">&#8734;</div>
+        <h3>Advanced methods &amp; AI</h3>
+        <p>Innovative statistical, machine learning, and deep learning methods for precision medicine.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Recent webinars</h2>
+      <a href="{{ '/webinars/' | relative_url }}">All webinars &rarr;</a>
+    </div>
+    {% assign webinars = site.data.webinars | sort: "date" | reverse %}
+    <div class="grid grid-3">
+      {% for w in webinars limit: 3 %}
+        {% include webinar-card.html webinar=w compact=true %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+---
+layout: default
+title: Team
+permalink: /team/
+---
+<section class="page-header">
+  <div class="container">
+    <h1>Team</h1>
+    <p>Statisticians from pharmaceutical, diagnostic, and technology organizations who lead and contribute to the PMS Working Group.</p>
+    <div class="year-tabs">
+      {% for y in site.data.members %}
+        <a href="#year-{{ y.year }}">{{ y.year }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% for y in site.data.members %}
+<section class="section{% cycle '', ' section-alt' %}" id="year-{{ y.year }}">
+  <div class="container">
+    <h2>{{ y.year }}</h2>
+    {% if y.note %}<p class="muted">{{ y.note }}</p>{% endif %}
+
+    <h3 class="group-title">Leadership</h3>
+    <div class="grid grid-people">
+      {% for m in y.members %}{% if m.role != "Member" %}{% include person.html person=m %}{% endif %}{% endfor %}
+    </div>
+
+    {% capture member_cards %}{% for m in y.members %}{% if m.role == "Member" %}{% include person.html person=m %}{% endif %}{% endfor %}{% endcapture %}
+    {% if member_cards contains "person" %}
+      <h3 class="group-title">Members</h3>
+      <div class="grid grid-people">{{ member_cards }}</div>
+    {% endif %}
+  </div>
+</section>
+{% endfor %}

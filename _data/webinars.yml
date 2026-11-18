@@ -1,0 +1,75 @@
+# Webinar series. Order does not matter; the site sorts by date.
+# Optional links: registration, slides, recording (leave "" to hide).
+# The "Upcoming" badge is shown automatically until the webinar date passes.
+
+- title: "Career Development in Precision Medicine Statistics in Biopharmaceutical and Biotech Companies"
+  date: 2026-11-20
+  time: "1:00 – 2:00 PM ET"
+  format: Career panel
+  partner: SSGG
+  summary: >-
+    Three leaders in the field share their career paths, what clinical and biomarker
+    statisticians actually do, the skills that matter most, and what hiring managers look
+    for, in a moderated interview followed by audience Q&A.
+  people:
+    - { name: "Gina D'Angelo, PhD", role: Panelist, position: "Director, Oncology Statistical Innovation, AstraZeneca" }
+    - { name: "Wenting Wang, PhD", role: Panelist, position: "Global Head of Biomarker Statistics, Sanofi" }
+    - { name: "Daniel Gaile", role: Panelist, position: "Head of Biostatistics, Guardant Health" }
+    - { name: "Kui Shen, PhD", role: Host, position: "Senior Director, Precision Medicine and AI, Bayer" }
+  links:
+    registration: ""
+    slides: ""
+    recording: ""
+
+- title: "Fitusiran CDx Journey"
+  date: 2026-02-13
+  time: "1:00 – 2:00 PM ET"
+  format: Presentation and panel discussion
+  partner: SSGG
+  summary: >-
+    A 30-minute presentation on the companion diagnostic (CDx) development journey for
+    fitusiran, followed by a 30-minute panel discussion.
+  people:
+    - { name: "Hong Wang, PhD", role: Speaker, position: "Director, Sanofi" }
+    - { name: "Jai Pandey, PhD", role: Panelist, position: "GRA Device Head, Sanofi" }
+    - { name: "Shuguang Huang, PhD", role: Panelist, position: "CSO, Stat4ward" }
+    - { name: "Kui Shen, PhD", role: Host, position: "Senior Director, Bayer" }
+    - { name: "Wenting Wang, PhD", role: Host, position: "Global Head, Sanofi" }
+  links:
+    slides: ""
+    recording: ""
+
+- title: "When More Isn't Better: Rethinking Scale in Single-Cell Foundation Models"
+  date: 2025-11-21
+  time: "1:00 – 2:00 PM ET"
+  format: Invited talk
+  partner: SSGG
+  summary: >-
+    How do dataset size and diversity affect single-cell foundation model performance?
+    Drawing on an analysis of 400 models trained on 22.2 million cells, this talk covers
+    key insights on model generalization challenges and practical strategies for optimizing
+    AI in precision medicine.
+  people:
+    - { name: "Ava Amini, PhD", role: Speaker, position: "Principal Researcher, Microsoft Research" }
+  links:
+    slides: ""
+    recording: ""
+
+- title: "Statistical Strategy and Method in Oncology Precision Medicine Development"
+  date: 2025-10-24
+  time: "2:00 – 3:00 PM ET"
+  format: Inaugural webinar
+  partner: ""
+  summary: >-
+    Statistical methodologies and study design considerations critical to precision
+    medicine in oncology, covering both companion diagnostic (CDx) device development and
+    therapeutic drug development. Real-world examples illustrate biomarker-driven trial
+    designs, patient stratification strategies, and regulatory considerations for
+    co-development of diagnostics and therapeutics.
+  people:
+    - { name: "Meijuan Li, PhD", role: Speaker, position: "Division Vice President & Head of Biometrics, Incyte" }
+    - { name: "Kui Shen, PhD", role: Host, position: "Bayer" }
+    - { name: "Yaji Xu, PhD", role: Host, position: "Johnson & Johnson" }
+  links:
+    slides: ""
+    recording: ""

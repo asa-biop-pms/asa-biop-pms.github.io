@@ -1,0 +1,34 @@
+{% assign w = include.webinar %}
+<article class="card webinar" data-date="{{ w.date | date: '%Y-%m-%d' }}">
+  <div class="webinar-date">
+    <span class="month">{{ w.date | date: "%b" }}</span>
+    <span class="day">{{ w.date | date: "%-d" }}</span>
+    <span class="year">{{ w.date | date: "%Y" }}</span>
+  </div>
+  <div class="webinar-body">
+    <div class="tags">
+      <span class="badge badge-upcoming" hidden>Upcoming</span>
+      {% if w.format and w.format != "" %}<span class="tag">{{ w.format }}</span>{% endif %}
+      {% if w.partner and w.partner != "" %}<span class="tag tag-muted">with ASA {{ w.partner }}</span>{% endif %}
+    </div>
+    <h3>{{ w.title }}</h3>
+    <p class="meta">{{ w.date | date: "%A, %B %-d, %Y" }}{% if w.time %} &middot; {{ w.time }}{% endif %}</p>
+    {% unless include.compact %}
+      {% if w.summary %}<p>{{ w.summary }}</p>{% endif %}
+    {% endunless %}
+    <ul class="people">
+      {% for p in w.people %}
+        {% if include.compact and p.role == "Host" %}{% continue %}{% endif %}
+        <li><span class="role">{{ p.role }}</span> <strong>{{ p.name }}</strong>{% unless include.compact %}{% if p.position %}<span class="position">{{ p.position }}</span>{% endif %}{% endunless %}</li>
+      {% endfor %}
+    </ul>
+    {% unless include.compact %}
+      {% capture links_html %}
+        {% if w.links.registration and w.links.registration != "" %}<a class="btn" href="{{ w.links.registration }}" target="_blank" rel="noopener">Register</a>{% endif %}
+        {% if w.links.slides and w.links.slides != "" %}<a class="btn btn-outline" href="{{ w.links.slides }}" target="_blank" rel="noopener">Slides</a>{% endif %}
+        {% if w.links.recording and w.links.recording != "" %}<a class="btn btn-outline" href="{{ w.links.recording }}" target="_blank" rel="noopener">Recording</a>{% endif %}
+      {% endcapture %}
+      {% if links_html contains "<a" %}<div class="links">{{ links_html }}</div>{% endif %}
+    {% endunless %}
+  </div>
+</article>

@@ -1,0 +1,10 @@
+{% assign p = include.person %}
+{% assign parts = p.name | split: " " %}
+<div class="person">
+  <div class="avatar">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</div>
+  <div>
+    <div class="person-name">{{ p.name }}</div>
+    {% if p.affiliation and p.affiliation != "" %}<div class="person-aff">{{ p.affiliation }}</div>{% endif %}
+    {% if p.role != "Member" %}<div class="person-role">{{ p.role }}</div>{% endif %}
+  </div>
+</div>

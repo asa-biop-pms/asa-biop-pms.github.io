@@ -1,0 +1,21 @@
+title: Precision Medicine Statistics Working Group
+short_title: ASA BIOP PMS
+description: >-
+  The Precision Medicine Statistics (PMS) Working Group of the American Statistical
+  Association Biopharmaceutical Section (ASA BIOP).
+
+# Must match the GitHub repository name, e.g. "/asa-biop-pms" for
+# https://<account>.github.io/asa-biop-pms. Use "" for a <account>.github.io repository
+# or a custom domain.
+baseurl: "/asa-biop-pms"
+url: ""
+
+links:
+  biop: https://community.amstat.org/biop/home
+  ssgg: https://community.amstat.org/ssgg/home
+  linkedin: ""   # paste the PMS LinkedIn page URL here
+  email: ""      # optional group contact email
+
+markdown: kramdown
+exclude:
+  - README.md
