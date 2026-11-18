@@ -18,3 +18,4 @@ links:
 markdown: kramdown
 exclude:
   - README.md
+  - EDITING.md

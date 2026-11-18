@@ -15,6 +15,8 @@ Because the repository is named `asa-biop-pms.github.io`, `baseurl` in `_config.
 
 ## Updating content
 
+See **[EDITING.md](EDITING.md)** for step-by-step instructions and examples.
+
 All content lives in YAML files under `_data/`; edit them directly on GitHub or locally.
 
 | What | File |
