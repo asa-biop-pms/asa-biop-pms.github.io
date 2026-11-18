@@ -193,8 +193,11 @@ h3 { font-size: 1.15rem; font-weight: 600; }
 .person-role { color: var(--primary); font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
 
 /* Conferences */
-.timeline-year { margin-bottom: 40px; }
-.timeline-year > h2 { border-bottom: 2px solid var(--accent); padding-bottom: 6px; }
+.timeline-year { margin: 28px 0 36px; }
+.year-heading {
+  font-size: 1.3rem; border-bottom: 2px solid var(--border); padding-bottom: 6px; margin-bottom: 16px;
+}
+section[id] { scroll-margin-top: 68px; }
 .conf p { margin: 0 0 8px; }
 
 /* Footer */

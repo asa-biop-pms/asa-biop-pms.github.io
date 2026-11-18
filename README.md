@@ -19,9 +19,9 @@ All content lives in YAML files under `_data/`; edit them directly on GitHub or 
 
 | What | File |
 | --- | --- |
-| Team members by year | `_data/members.yml` |
-| Webinars (registration, slides, recording links) | `_data/webinars.yml` |
-| Conference presentations and short courses | `_data/presentations.yml` |
+| Team members by year (Team page) | `_data/members.yml` |
+| Webinars, with registration/slides/recording links (Activities page) | `_data/webinars.yml` |
+| Conference presentations and short courses (Activities page) | `_data/presentations.yml` |
 | LinkedIn page, contact email, site links | `_config.yml` |
 | Home page introduction | `index.html` |
 

@@ -12,7 +12,7 @@ layout: default
         personalized therapies.
       </p>
       <div class="hero-actions">
-        <a class="btn" href="{{ '/webinars/' | relative_url }}">Webinar series</a>
+        <a class="btn" href="{{ '/activities/' | relative_url }}">Our activities</a>
         <a class="btn btn-ghost" href="{{ '/team/' | relative_url }}">Meet the team</a>
       </div>
     </div>
@@ -64,7 +64,7 @@ layout: default
   <div class="container">
     <div class="section-head">
       <h2>Recent webinars</h2>
-      <a href="{{ '/webinars/' | relative_url }}">All webinars &rarr;</a>
+      <a href="{{ '/activities/' | relative_url }}">All activities &rarr;</a>
     </div>
     {% assign webinars = site.data.webinars | sort: "date" | reverse %}
     <div class="grid grid-3">
