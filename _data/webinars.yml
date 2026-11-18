@@ -14,7 +14,7 @@
   people:
     - { name: "Gina D'Angelo, PhD", role: Panelist, position: "Director, Oncology Statistical Innovation, AstraZeneca" }
     - { name: "Wenting Wang, PhD", role: Panelist, position: "Global Head of Biomarker Statistics, Sanofi" }
-    - { name: "Daniel Gaile", role: Panelist, position: "Head of Biostatistics, Guardant Health" }
+    - { name: "Daniel Gaile, PhD", role: Panelist, position: "Head of Biostatistics, Guardant Health" }
     - { name: "Kui Shen, PhD", role: Host, position: "Senior Director, Precision Medicine and AI, Bayer" }
   links:
     registration: ""
