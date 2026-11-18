@@ -4,11 +4,10 @@ description: >-
   The Precision Medicine Statistics (PMS) Working Group of the American Statistical
   Association Biopharmaceutical Section (ASA BIOP).
 
-# Must match the GitHub repository name, e.g. "/asa-biop-pms" for
-# https://<account>.github.io/asa-biop-pms. Use "" for a <account>.github.io repository
-# or a custom domain.
-baseurl: "/asa-biop-pms"
-url: ""
+# "" because the repository is named asa-biop-pms.github.io. If the site moves to a
+# repository with another name, set this to "/<repository-name>".
+baseurl: ""
+url: "https://asa-biop-pms.github.io"
 
 links:
   biop: https://community.amstat.org/biop/home

@@ -3,15 +3,15 @@
 Static website built with [Jekyll](https://jekyllrb.com/) and hosted on GitHub Pages.
 GitHub builds the site automatically on every push; no local tooling is required.
 
-## Publish on GitHub Pages
+Live site: <https://asa-biop-pms.github.io/>
 
-1. Create a public GitHub repository (for example `asa-biop-pms`) and push this folder to it.
-2. In the repository, open **Settings > Pages**, set **Source** to *Deploy from a branch*,
-   choose the `main` branch and the `/ (root)` folder, then save.
-3. Make sure `baseurl` in `_config.yml` matches the repository name (`/asa-biop-pms`).
-   Use `baseurl: ""` if the repository is named `<account>.github.io` or you use a custom domain.
+## GitHub Pages settings
 
-The site will be live at `https://<account>.github.io/asa-biop-pms/` within a minute or two.
+In the repository, **Settings > Pages** should have **Source** set to *Deploy from a branch*,
+with the `main` branch and the `/ (root)` folder. Every commit to `main` republishes the site
+within a minute or two; progress is shown in the **Actions** tab.
+
+Because the repository is named `asa-biop-pms.github.io`, `baseurl` in `_config.yml` is `""`.
 
 ## Updating content
 
@@ -29,7 +29,7 @@ All content lives in YAML files under `_data/`; edit them directly on GitHub or 
 - **New webinar:** add an entry to `webinars.yml`. Webinars are sorted by date, and an
   "Upcoming" badge is shown automatically until the webinar date passes.
 - **Slides or recordings:** put files in `assets/files/` and link them as
-  `/asa-biop-pms/assets/files/<name>.pdf`, or paste an external URL (e.g. YouTube).
+  `/assets/files/<name>.pdf`, or paste an external URL (e.g. YouTube).
 
 ## Local preview (optional)
 
