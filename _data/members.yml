@@ -9,15 +9,15 @@
     - { name: Johan Surtihadi, affiliation: Illumina, role: Co-Chair }
     - { name: Hong Wang, affiliation: Sanofi, role: Co-Chair }
     - { name: Wenting Wang, affiliation: Sanofi, role: Co-Chair }
-    - { name: Huang Xin, affiliation: "", role: Co-Chair }
+    - { name: Huang Xin, affiliation: "Abbive", role: Co-Chair }
     - { name: Tianyu Bai, affiliation: "", role: Co-Chair }
-    - { name: Qingqing Hong, affiliation: "", role: Co-Chair }
+    - { name: Qingqing Hong, affiliation: "GSK", role: Co-Chair }
     - { name: Lixin Lang, affiliation: Merck, role: Co-Chair }
-    - { name: Li Lin, affiliation: "", role: Co-Chair }
-    - { name: Xin Tong, affiliation: "", role: Co-Chair }
-    - { name: Sutan Wu, affiliation: "", role: Co-Chair }
+    - { name: Li Lin, affiliation: "PharmaLex ", role: Co-Chair }
+    - { name: Xin Tong, affiliation: "Astellas", role: Co-Chair }
+    - { name: Sutan Wu, affiliation: "Daiichi Sankyo", role: Co-Chair }
     - { name: Yaji Xu, affiliation: Johnson & Johnson, role: Co-Chair}
-    - { name: Hong Yuan, affiliation: "", role: Co-Chair }
+    - { name: Hong Yuan, affiliation: "Eisai", role: Co-Chair }
     - { name: Jing Zhai, affiliation: "", role: Co-Chair }
 
 - year: 2025
