@@ -8,6 +8,14 @@
     });
   }
 
+  // The address is assembled on click so it never appears in the page source.
+  document.querySelectorAll(".js-email").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.location.href = "mailto:" + link.getAttribute("data-user") + "@" + link.getAttribute("data-domain");
+    });
+  });
+
   // Mark webinars as upcoming in the browser so the badge never goes stale between site builds.
   var now = new Date();
   var today = [

@@ -44,8 +44,11 @@
       </div>
       <div class="footer-links">
         <a href="{{ site.links.biop }}" target="_blank" rel="noopener">ASA BIOP</a>
-        {% if site.links.linkedin != "" %}<a href="{{ site.links.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
-        {% if site.links.email != "" %}<a href="mailto:{{ site.links.email }}">Contact</a>{% endif %}
+        {% if site.links.linkedin != "" %}<a href="{{ site.links.linkedin }}" target="_blank" rel="noopener">Follow us on LinkedIn</a>{% endif %}
+        {% if site.links.email != "" %}
+          {% assign email_parts = site.links.email | split: "@" %}
+          <a href="#" class="js-email" data-user="{{ email_parts[0] }}" data-domain="{{ email_parts[1] }}">Contact us</a>
+        {% endif %}
       </div>
     </div>
   </footer>

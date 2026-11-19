@@ -11,8 +11,8 @@ url: "https://asa-biop-pms.github.io"
 
 links:
   biop: https://community.amstat.org/biop/home
-  linkedin: ""   # paste the PMS LinkedIn page URL here
-  email: ""      # optional group contact email
+  linkedin: https://www.linkedin.com/company/107237206
+  email: "kuishen+PMS@gmail.com"   # not shown on the page; used by the "Contact us" link
 
 markdown: kramdown
 exclude:

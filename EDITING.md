@@ -12,7 +12,7 @@ on GitHub. Every saved change ("commit") republishes the site automatically with
 | Publications (Achievement page) | `_data/publications.yml` |
 | Conference presentations (Achievement page) | `_data/presentations.yml` |
 | Upcoming collaborative projects (Activities page) | `activities.html` |
-| LinkedIn link, contact email | `_config.yml` |
+| LinkedIn link, contact email (footer) | `_config.yml` |
 | Home page introduction text | `index.html` |
 
 ## Editing a file on GitHub
