@@ -54,6 +54,16 @@ permalink: /achievement/
               {% if item.full_name %}<p class="meta">{{ item.full_name }}</p>{% endif %}
               {% if item.presenters %}<p class="meta">{{ item.presenters | join: ", " }}</p>{% endif %}
               {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+              {% if item.sessions %}
+                <ul class="sessions">
+                  {% for s in item.sessions %}
+                    <li>
+                      {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}
+                      {% if s.people %}<span class="meta">{{ s.people }}</span>{% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
               {% if item.link %}<a href="{{ item.link }}" target="_blank" rel="noopener">More information &rarr;</a>{% endif %}
             </article>
           {% endfor %}

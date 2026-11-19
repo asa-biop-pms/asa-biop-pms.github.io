@@ -87,6 +87,15 @@ Add it under the right year (create a new `- year:` block at the top for a new y
 
 Only `conference` is required; leave out any field you don't need.
 
+To list several sessions or short courses under one conference, add `sessions:`:
+
+```yaml
+      sessions:
+        - title: "SC03: Short course title"
+          people: "Short course taught by Jane Doe and Kui Shen"
+          link: "https://..."
+```
+
 ### Add a publication (`_data/publications.yml`)
 
 Add it at the top of the file (newest first):

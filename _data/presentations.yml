@@ -1,22 +1,42 @@
 # Conference presentations, short courses, and sessions, grouped by year (newest first).
 # type: Short course | Invited session | Presentation | Program committee | ...
-# Optional per item: title, presenters, link.
+# Optional per item: title, presenters, link, sessions.
+# sessions: list of { title, people, link } for individual sessions or short courses at the conference.
 
 - year: 2026
   items:
+    - conference: RISW 2026
+      full_name: ASA BIOP Regulatory-Industry Statistics Workshop
+      type: Parallel sessions and short course
+      description: PMS members presented the working group's scientific accomplishments, taught a short course, and organized a session on biomarker-adaptive trial design.
+      sessions:
+        - title: "PS15: Advancing Precision Medicine through Statistics and ML/AI: Scientific Accomplishments of the ASA Precision Medicine Statistics Working Group"
+          people: "Presented by the PMS Working Group"
+          link: "https://ww2.amstat.org/meetings/risw/2026/onlineprogram/session.cfm?id=5632"
+        - title: "SC03: Statistical and Machine Learning Methods with Trial Design Strategies for Precision Medicine"
+          people: "Short course taught by Gina D'Angelo and Kui Shen"
+          link: "https://ww2.amstat.org/meetings/risw/2026/shortcourses.cfm"
+        - title: "PS25: Designing Biomarker-Adaptive Trials: Phase II Innovation to Phase III Confirmation"
+          people: "Organized and presented by Kui Shen"
+          link: "https://ww2.amstat.org/meetings/risw/2026/onlineprogram/session.cfm?id=5616"
     - conference: JSM 2026
       full_name: Joint Statistical Meetings
       type: Short course
-      title: Precision Medicine Statistics
-      description: Short course developed and delivered by PMS members.
+      title: "CE_03: Advancing Precision Medicine: Statistical Approaches and Design Strategies to Integrate Biomarkers for Targeted Therapies"
+      presenters: ["Gina D'Angelo", "Kui Shen"]
+      description: Full-day short course taught by PMS members, covering precision medicine, AI/ML approaches, biomarker-driven trial design, and companion diagnostics.
+      link: "https://ww2.amstat.org/meetings/jsm/2026/onlineprogram/session.cfm?id=8495"
     - conference: StatGen 2026
       full_name: Statistical Genetics and Genomics Conference
       type: Presentations
-      description: PMS members served on the program committee and as session chairs for the Precision Medicine track.
-    # - conference: RISW 2026
-    #   full_name: ASA BIOP Regulatory-Industry Statistics Workshop
-    #   type: Parallel session
-    #   description: Recent scientific advances in precision medicine statistics.
+      description: PMS members Kui Shen, Gina D'Angelo, and Wenting Wang organized and presented in the sessions below, and PMS members served on the program committee and as session chairs for the Precision Medicine track.
+      sessions:
+        - title: "IT 3: Precision Medicine with Multi-Modal and Omics Data I"
+          people: "Moderated by Kui Shen"
+          link: "https://whova.com/embedded/session/fjNE%40pWfKIOFTk6DLwgDHOTDYfWWAFRMH8B7fzLOT%404%3D/5219172/?widget=primary"
+        - title: "Navigating Careers in Pharmaceutical Biomarker Statistics: A Round Table Discussion for Graduate Students"
+          people: "Gina D'Angelo, Wenting Wang, and Kui Shen"
+          link: "https://whova.com/embedded/session/fjNE%40pWfKIOFTk6DLwgDHOTDYfWWAFRMH8B7fzLOT%404%3D/5185940/?widget=primary"
 
 - year: 2025
   items:
@@ -24,6 +44,10 @@
       full_name: ASA BIOP Regulatory-Industry Statistics Workshop
       type: Presentations and short course
       description: Precision medicine and companion diagnostics, with emphasis on statistical methodology and clinical trial design.
+      sessions:
+        - title: "SC05: Precision Medicine and Companion Diagnostics: Statistical and Design Considerations"
+          people: "Short course taught by Gina D'Angelo and Kui Shen"
+          link: "https://ww2.amstat.org/meetings/risw/2025/shortcourses.cfm"
     - conference: DSDSS 2025
       type: Presentations and short course
       description: Precision medicine and companion diagnostics, with emphasis on statistical methodology and clinical trial design.

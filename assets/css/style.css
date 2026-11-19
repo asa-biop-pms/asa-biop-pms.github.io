@@ -199,6 +199,10 @@ h3 { font-size: 1.15rem; font-weight: 600; }
 }
 section[id] { scroll-margin-top: 68px; }
 .conf p { margin: 0 0 8px; }
+.sessions { list-style: none; padding: 0; margin: 12px 0 4px; display: grid; gap: 10px; }
+.sessions li { padding-left: 14px; border-left: 3px solid var(--accent); }
+.sessions a { font-weight: 600; }
+.sessions .meta { display: block; }
 
 /* Footer */
 .site-footer { background: var(--navy); color: rgba(255, 255, 255, 0.8); padding: 32px 0; font-size: 0.92rem; }
