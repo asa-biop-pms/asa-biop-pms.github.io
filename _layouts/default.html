@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
   <header class="site-header">
@@ -47,12 +47,17 @@
         {% if site.links.linkedin != "" %}<a href="{{ site.links.linkedin }}" target="_blank" rel="noopener">Follow us on LinkedIn</a>{% endif %}
         {% if site.links.email != "" %}
           {% assign email_parts = site.links.email | split: "@" %}
-          <a href="#" class="js-email" data-user="{{ email_parts[0] }}" data-domain="{{ email_parts[1] }}">Contact us</a>
+          <a id="contact-link" data-user="{{ email_parts[0] }}" data-domain="{{ email_parts[1] }}">Contact us</a>
+          <script>
+            (function (a) {
+              a.href = "mailto:" + a.getAttribute("data-user") + "@" + a.getAttribute("data-domain");
+            })(document.getElementById("contact-link"));
+          </script>
         {% endif %}
       </div>
     </div>
   </footer>
 
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 </body>
 </html>
