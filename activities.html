@@ -6,28 +6,15 @@ permalink: /activities/
 <section class="page-header">
   <div class="container">
     <h1>Activities</h1>
-    <p>Webinars organized by the PMS Working Group and our upcoming collaborative research projects.</p>
+    <p>Upcoming collaborative research projects and webinars organized by the PMS Working Group.</p>
     <div class="year-tabs">
-      <a href="#webinars">Webinars</a>
       <a href="#projects">Collaborative projects</a>
+      <a href="#webinars">Webinars</a>
     </div>
   </div>
 </section>
 
-<section class="section" id="webinars">
-  <div class="container narrow-wide">
-    <h2>Webinars</h2>
-    <p class="muted">One-hour online webinars on statistics in precision medicine, companion diagnostics, and AI.</p>
-    {% assign webinars = site.data.webinars | sort: "date" | reverse %}
-    <div class="stack">
-      {% for w in webinars %}
-        {% include webinar-card.html webinar=w %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt" id="projects">
+<section class="section" id="projects">
   <div class="container narrow-wide">
     <h2>Next collaborative projects</h2>
     <p class="muted">Research projects the PMS Working Group is launching next. Members interested in contributing are welcome to join.</p>
@@ -44,5 +31,18 @@ permalink: /activities/
       </article>
     </div>
     <p class="muted">Published work and conference presentations are listed on the <a href="{{ '/achievement/' | relative_url }}">Achievement</a> page.</p>
+  </div>
+</section>
+
+<section class="section section-alt" id="webinars">
+  <div class="container narrow-wide">
+    <h2>Webinars</h2>
+    <p class="muted">One-hour online webinars on statistics in precision medicine, companion diagnostics, and AI.</p>
+    {% assign webinars = site.data.webinars | sort: "date" | reverse %}
+    <div class="stack">
+      {% for w in webinars %}
+        {% include webinar-card.html webinar=w %}
+      {% endfor %}
+    </div>
   </div>
 </section>
