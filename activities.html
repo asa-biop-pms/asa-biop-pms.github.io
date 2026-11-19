@@ -6,10 +6,10 @@ permalink: /activities/
 <section class="page-header">
   <div class="container">
     <h1>Activities</h1>
-    <p>Webinars, short courses, and conference presentations organized and delivered by the PMS Working Group.</p>
+    <p>Webinars organized by the PMS Working Group and our upcoming collaborative research projects.</p>
     <div class="year-tabs">
       <a href="#webinars">Webinars</a>
-      <a href="#conferences">Conference presentations</a>
+      <a href="#projects">Collaborative projects</a>
     </div>
   </div>
 </section>
@@ -27,30 +27,22 @@ permalink: /activities/
   </div>
 </section>
 
-<section class="section section-alt" id="conferences">
+<section class="section section-alt" id="projects">
   <div class="container narrow-wide">
-    <h2>Conference presentations</h2>
-    <p class="muted">Short courses, sessions, and presentations delivered by PMS members at statistical and scientific conferences.</p>
-    {% for y in site.data.presentations %}
-      <div class="timeline-year">
-        <h3 class="year-heading">{{ y.year }}</h3>
-        <div class="stack">
-          {% for item in y.items %}
-            <article class="card conf">
-              <div class="tags">
-                <span class="tag">{{ item.conference }}</span>
-                {% if item.type %}<span class="tag tag-muted">{{ item.type }}</span>{% endif %}
-              </div>
-              {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
-              {% if item.full_name %}<p class="meta">{{ item.full_name }}</p>{% endif %}
-              {% if item.presenters %}<p class="meta">{{ item.presenters | join: ", " }}</p>{% endif %}
-              {% if item.description %}<p>{{ item.description }}</p>{% endif %}
-              {% if item.link %}<a href="{{ item.link }}" target="_blank" rel="noopener">More information &rarr;</a>{% endif %}
-            </article>
-          {% endfor %}
-        </div>
-      </div>
-    {% endfor %}
-    <p class="muted">More details on individual talks and materials will be added.</p>
+    <h2>Next collaborative projects</h2>
+    <p class="muted">Research projects the PMS Working Group is launching next. Members interested in contributing are welcome to join.</p>
+    <div class="stack">
+      <article class="card conf">
+        <div class="tags"><span class="tag">Upcoming</span></div>
+        <h3>Statistical methods for ctDNA as an early endpoint</h3>
+        <p>Developing statistical methodology for using circulating tumor DNA (ctDNA) as an early endpoint in clinical development.</p>
+      </article>
+      <article class="card conf">
+        <div class="tags"><span class="tag">Upcoming</span></div>
+        <h3>Generative models for survival</h3>
+        <p>Exploring generative modeling approaches for time-to-event (survival) outcomes.</p>
+      </article>
+    </div>
+    <p class="muted">Published work and conference presentations are listed on the <a href="{{ '/achievement/' | relative_url }}">Achievement</a> page.</p>
   </div>
 </section>

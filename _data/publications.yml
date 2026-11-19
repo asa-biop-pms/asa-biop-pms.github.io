@@ -1,0 +1,12 @@
+# Publications by PMS members (newest first).
+# Optional per item: authors, journal, year, summary, link.
+
+- title: "BOOST: An Adaptive Biomarker-Guided Simon Two-Stage Design with Explicit Control of Pooled and Subgroup Inference"
+  authors: ["Heling Tong", "Haitao Pan", "Hongyu Miao", "Weichao Bao", "Kui Shen"]
+  journal: Statistics in Biopharmaceutical Research
+  year: 2026
+  topic: Biomarker adaptive trial design
+  summary: >-
+    PMS members published BOOST, a biomarker adaptive trial design that extends the Simon
+    two-stage design with explicit control of pooled and biomarker-subgroup inference.
+  link: "https://www.tandfonline.com/doi/full/10.1080/19466315.2026.2695044"

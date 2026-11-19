@@ -9,7 +9,9 @@ on GitHub. Every saved change ("commit") republishes the site automatically with
 |---|---|
 | Team members (Team page) | `_data/members.yml` |
 | Webinars (Activities page) | `_data/webinars.yml` |
-| Conference presentations (Activities page) | `_data/presentations.yml` |
+| Publications (Achievement page) | `_data/publications.yml` |
+| Conference presentations (Achievement page) | `_data/presentations.yml` |
+| Upcoming collaborative projects (Activities page) | `activities.html` |
 | LinkedIn link, contact email | `_config.yml` |
 | Home page introduction text | `index.html` |
 
@@ -84,6 +86,23 @@ Add it under the right year (create a new `- year:` block at the top for a new y
 ```
 
 Only `conference` is required; leave out any field you don't need.
+
+### Add a publication (`_data/publications.yml`)
+
+Add it at the top of the file (newest first):
+
+```yaml
+- title: "Title of the Paper"
+  authors: ["Jane Doe", "Kui Shen"]
+  journal: Statistics in Biopharmaceutical Research
+  year: 2027
+  topic: Companion diagnostics
+  summary: >-
+    One or two sentences describing the paper.
+  link: "https://doi.org/..."
+```
+
+Only `title` is required; leave out any field you don't need.
 
 ### Upload slides (PDF)
 
